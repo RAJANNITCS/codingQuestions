@@ -1,4 +1,4 @@
-package collectionsFrameworkProblems;
+package stack;
 import java.util.Scanner;
 
 public class Test {
