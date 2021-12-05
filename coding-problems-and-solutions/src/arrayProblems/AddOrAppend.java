@@ -8,6 +8,7 @@ public class AddOrAppend {
 	public int[] arr;
 	public int numOfValueInArray = 0;
 	
+	
 	public void addDataInArray() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter size of Array.");

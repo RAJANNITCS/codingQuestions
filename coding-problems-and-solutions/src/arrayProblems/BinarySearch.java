@@ -1,10 +1,12 @@
 package arrayProblems;
+import java.util.Arrays;
 
 public class BinarySearch {
 	
-	public int[] arr = {2, 4, 6, 8, 10, 12, 14, 16};
+	public int[] arr = {12, 4, 6, 16, 10, 2, 14, 8};
 	
 	public int binarySearch(int value) {
+		Arrays.sort(this.arr);
 		int lowIndex = 0;
 		int higIndex = this.arr.length;
 		int mid = 0;

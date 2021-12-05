@@ -25,6 +25,6 @@ public class FindEquilibriumIndex {
 
 	public static void main(String[] args) {
 		FindEquilibriumIndex obj = new FindEquilibriumIndex();
-		obj.findEquilibriumIndex();
+//		obj.findEquilibriumIndex();
 	}
 }

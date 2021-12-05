@@ -1,10 +1,10 @@
 package arrayProblems;
+import java.util.*;
 
 public class Test {
 	
 	public static void main(String[] args) {
-		int i = 0 , j = 0;
-		System.out.println("i"+ i);
+		
+		System.out.println();
 	}
 }
- 

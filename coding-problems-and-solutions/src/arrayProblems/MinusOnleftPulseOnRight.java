@@ -17,6 +17,9 @@ public class MinusOnleftPulseOnRight {
 				int tempValue = this.arr[i];
 				this.arr[i] = this.arr[j];
 				this.arr[j] = tempValue;
+				i++;
+				j--;
+				
 			}
 		}
 	}

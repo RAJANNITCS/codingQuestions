@@ -52,7 +52,7 @@ public final class FindSubArrayWhichSum {
 	public static void main(String[] args) {
 		FindSubArrayWhichSum obj = new FindSubArrayWhichSum();
 		int value = 21;
-		obj.findSubArrayV1(value);
-//		obj.findSubArrayV2(value);
+//		obj.findSubArrayV1(value);
+		obj.findSubArrayV2(value);
 	}
 }

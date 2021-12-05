@@ -1,4 +1,5 @@
 package arrayProblems;
+import java.util.Arrays;
 
 public class UnionOperation {
 	
@@ -60,6 +61,35 @@ public class UnionOperation {
 		}
 	}
 	
+	public void findUnionV3() {
+		Arrays.sort(this.arr1);
+		Arrays.sort(this.arr2);
+		int i = 0, j = 0, k = 0;
+		this.tempArr = new int[this.arr1.length + this.arr2.length];
+		while (i < this.arr1.length && j < this.arr2.length) {
+			if (this.arr1[i] < this.arr2[j]) {
+				this.tempArr[k] = this.arr1[i];
+				k++;
+				i++;
+			}else if(this.arr1[i] > this.arr2[j]) {
+				this.tempArr[k]  = this.arr2[j];
+				k++;
+				j++;
+			}else {
+				this.tempArr[k] = this.arr1[i];
+				i++;
+				j++;
+				k++;
+			}
+		}
+		for (; i < this.arr1.length; i++,k++) {
+			this.tempArr[k] = this.arr1[i];
+		}
+		for (; j < this.arr2.length; j++,k++) {
+			this.tempArr[k] = this.arr2[j];
+		}
+	}
+	
 	public void display() {
 		System.out.println("Union Array is");
 		for (int value: this.tempArr) {
@@ -72,7 +102,8 @@ public class UnionOperation {
 //		obj.findUnionV1();
 //		obj.display();
 		
-		obj.findUnionV2();
+//		obj.findUnionV2();
+		obj.findUnionV3();
 		obj.display();
 		
 	}
