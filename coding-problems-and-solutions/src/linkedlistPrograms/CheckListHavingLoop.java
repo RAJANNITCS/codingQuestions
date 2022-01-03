@@ -49,6 +49,28 @@ public class CheckListHavingLoop {
 		currentNode.next = tailNode;
 	}
 	
+	public static void checkLinkedlistHavingLoop(Node currentNode) {
+		Node tailNode = currentNode;
+		boolean isHavingLoop = false;
+		while (currentNode != null && tailNode != null) {
+			tailNode = tailNode.next;
+			currentNode = currentNode.next;
+			if (currentNode != null && currentNode.next != null) {
+				currentNode = currentNode.next;
+			}
+			
+			if (currentNode != null && tailNode != null && tailNode.data == currentNode.data) {
+				isHavingLoop = true;
+				break;
+			}
+		}
+		if (isHavingLoop) {
+			System.out.println("List having loop");
+		}else {
+			System.out.println("list not having loop");
+		}
+	}
+	
 	public static void main(String[] args) {
 		CheckListHavingLoop obj = new CheckListHavingLoop();
 		obj.addNode(2);
@@ -59,7 +81,8 @@ public class CheckListHavingLoop {
 		obj.addNode(12);
 		obj.addNode(14);
 		obj.display();
-		createLinkedlistLoop(obj.headNode);
-		obj.display();
+//		createLinkedlistLoop(obj.headNode);
+//		obj.display();
+		checkLinkedlistHavingLoop(obj.headNode);
 	}
 }

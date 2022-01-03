@@ -1,18 +1,20 @@
 package javaQuestionSet1;
 
-public class MethodOverLoading {
+class Sum {
 	
-	public int sumOfNumber(int num1, int num2) {
+	public int sumOfValue(int num1, int num2) {
 		return (num1 + num2);
 	}
 	
-	public int sumOfNumber(int num1, int num2, int num3) {
+	public int sumOfValue(int num1, int num2, int num3) {
 		return (num1 + num2 + num3);
 	}
-	
+}
+
+public class MethodOverloading {
 	public static void main(String[] args) {
-		MethodOverLoading obj = new MethodOverLoading();
-		System.out.println(obj.sumOfNumber(2, 5));
-		System.out.println(obj.sumOfNumber(2, 4, 6));
+		Sum obj = new Sum();
+		System.out.println(obj.sumOfValue(22, 44));
+		System.out.println(obj.sumOfValue(22, 44, 55));
 	}
 }

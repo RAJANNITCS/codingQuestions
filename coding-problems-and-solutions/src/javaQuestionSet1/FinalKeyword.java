@@ -1,14 +1,23 @@
 package javaQuestionSet1;
 
-public class FinalKeyword {
-	public final int a;
+class Person2 {
+	public int age;
+	public String name;
 	
-	public FinalKeyword(int value) {
-		this.a = value;
+	public final void display() {
+		System.out.println(this.name+" "+this.age);
 	}
+}
+
+class Student2 extends Person2 {
 	
+}
+
+public class FinalKeyword {
 	public static void main(String[] args) {
-		FinalKeyword obj = new FinalKeyword(5);
-		System.out.println(obj.a);
+		final int value = 55;
+		
+//		value = 50;
+		
 	}
 }
