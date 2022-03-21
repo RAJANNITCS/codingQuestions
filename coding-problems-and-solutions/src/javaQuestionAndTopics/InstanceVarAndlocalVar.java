@@ -1,24 +1,23 @@
 package javaQuestionAndTopics;
 
 class Person {
-	// here age and name is instance variable
+	// here age and name are instance variable 
 	public int age;
 	public String name;
 	
-	// here age and name is local variable
+	// here age and name are local variable
 	public Person(int age, String name) {
 		this.age = age;
 		this.name = name;
 	}
 	
-	public void displayDetail() {
-		System.out.println(this.name+" "+ this.age);
+	public void display() {
+		System.out.println(this.age+" "+this.name);
 	}
 }
-
 public class InstanceVarAndlocalVar {
 	public static void main(String[] args) {
-		Person rohan = new Person(22,"rohan");
-		rohan.displayDetail();
+		Person obj = new Person(22, "rohan");
+		obj.display();
 	}
 }

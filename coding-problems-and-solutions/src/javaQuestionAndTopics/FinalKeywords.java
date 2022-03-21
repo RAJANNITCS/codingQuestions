@@ -1,35 +1,22 @@
 package javaQuestionAndTopics;
 
-class Person3 {
-	public int age;
-	public String name;
+class Person11 {
 	
-	public Person3(int age, String name) {
-		this.age = age;
-		this.name = name;
-	}
-	
-	public void displayDetail() {
-		System.out.println(this.name+" "+this.age);
+	public void display() {
+		System.out.println("it is person class");
 	}
 }
 
-class Student1 extends Person3 {
-	public int rollNo;
+class Student11 extends Person11{
 	
-	public Student1(int rollNo, int age, String name) {
-		super(age,name);
-	}
-	
-	@Override
-	public void displayDetail() {
-		System.out.println(this.rollNo+" "+this.age+" "+this.name);
+	@Override 
+	public void display() {
+		System.out.println("it is student class");
 	}
 }
-
 public class FinalKeywords {
 	public static void main(String[] args) {
-		int age = 22;
-		age = 23;
+		final int age = 22;
+//		age = 24;
 	}
 }

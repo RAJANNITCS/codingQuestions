@@ -9,14 +9,6 @@ class Person1 {
 		this.name = name;
 	}
 	
-	public void setAge(int age) {
-		this.age = age;
-	}
-	
-	public void setName(String name) {
-		this.name = name;
-	}
-	
 	public int getAge() {
 		return this.age;
 	}
@@ -25,14 +17,22 @@ class Person1 {
 		return this.name;
 	}
 	
-	public void displayDetail() {
-		System.out.println(this.name+" "+ this.age);
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public void display() {
+		System.out.println(this.age+" "+this.name);
 	}
 }
-
 public class DataEncapsulation {
 	public static void main(String[] args) {
-		Person1 obj = new Person1(22,"rohan");
-		obj.displayDetail();
+		Person1 obj = new Person1(22, "rohan");
+		obj.display();
+//		obj.age = 22;
 	}
 }

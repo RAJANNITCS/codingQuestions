@@ -2,38 +2,37 @@ package javaQuestionAndTopics;
 
 class Bike1 {
 	public int startSpeed = 20;
-	public int topSpeed = 180;
+//	public int topSpeed;
 	
-//	public Bike1 (int startSpeed, int topSpeed) {
+//	public Bike1(int startSpeed,int topSpeed) {
 //		this.startSpeed = startSpeed;
 //		this.topSpeed = topSpeed;
 //	}
 	
-	public void displayDetail() {
-		System.out.println("start speed "+ this.startSpeed + " "+ "top speed "+ this.topSpeed);
-	}
+//	public void display() {
+//		System.out.println(this.startSpeed+" to "+this.topSpeed);
+//	}
 }
 
-class SuperBike1 extends Bike1 {
-	public int startSpeed;
+class SuperBike extends Bike1 {
+	public String nameOfCom;
 	public int topSpeed;
-	public String nameOfCompany;
 	
-	public SuperBike1(String nameOfCompany, int startSpeed, int topSpeed) {
-//		super(startSpeed, topSpeed);
-		this.nameOfCompany = nameOfCompany;
+	public SuperBike(int topSpeed,String nameOfCom) {
+//		super(startSpeed,topSpeed);
+		this.topSpeed = topSpeed;
+		this.nameOfCom = nameOfCom;
 	}
 	
-	public void displayDetail() {
-//		super.displayDetail();
-		System.out.println(super.startSpeed);
-		System.out.println("name of company " + this.nameOfCompany);
+	public void superBikeDetails() {
+//		super.display();
+		System.out.println(super.startSpeed+ "to "+this.topSpeed);
+		System.out.println(this.nameOfCom);
 	}
 }
-
 public class SuperKeywords {
 	public static void main(String[] args) {
-		SuperBike1 obj = new SuperBike1("KTM", 20, 200);
-		obj.displayDetail();
+		SuperBike ktm = new SuperBike(250, "KTM");
+		ktm.superBikeDetails();
 	}
 }

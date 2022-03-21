@@ -5,10 +5,12 @@ public class FinallyBlock {
 		try {
 			int[] arr = new int[5];
 			arr[5] = 33/0;
-		}catch(Exception e) {
+		}catch(ArithmeticException e) {
+			System.out.println(e);
+		}catch(ArrayIndexOutOfBoundsException e) {
 			System.out.println(e);
 		}finally {
-			System.out.println("always run");
+			System.out.println("it is always run");
 		}
 	}
 }
