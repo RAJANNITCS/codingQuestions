@@ -1,23 +1,25 @@
 package javaTopicAndCodingQuestions;
 
-class Person3 {
+class Person84 {
 	
 	public void display() {
-		System.out.println("this is person class");
+		System.out.println("Person class");
 	}
 }
 
-class Student1 extends Person3 {
+class Student84 extends Person84 {
 	
 	@Override
 	public void display() {
-		System.out.println("this is Student class");
+		System.out.println("Student");
 	}
 }
+
 public class FinalKeywords {
 	public static void main(String[] args) {
+		Student84 obj = new Student84();
+		obj.display();
 		final int age = 22;
-//		age = 34;
-		System.out.println(age);
+//		age = 25;
 	}
-}
+}	

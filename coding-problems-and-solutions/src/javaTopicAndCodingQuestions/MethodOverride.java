@@ -1,23 +1,24 @@
 package javaTopicAndCodingQuestions;
 
-class Person2 {
+class Person3 {
 	
 	public void display() {
-		System.out.println("This is Person class");
+		System.out.println("person class");
 	}
 }
 
-class Student extends Person2{
+class Student3 extends Person3 {
 	
 	@Override
 	public void display() {
-		System.out.println("This is Student class");
+		System.out.println("student class");
 	}
 }
 
 public class MethodOverride {
 	public static void main(String[] args) {
-		Student obj = new Student();
+		Student3 obj = new Student3();
 		obj.display();
+		
 	}
 }

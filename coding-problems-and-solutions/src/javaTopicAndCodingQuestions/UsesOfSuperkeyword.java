@@ -1,10 +1,10 @@
 package javaTopicAndCodingQuestions;
 
-class Bike1 {
-	public int startSpeed = 20;
+class Bike66 {
+	public int startSpeed = 10;
+	public int topSpeed = 180;
 	
-	
-//	public Bike1(int startSpeed, int topSpeed) {
+//	public Bike66(int startSpeed, int topSpeed) {
 //		this.startSpeed = startSpeed;
 //		this.topSpeed = topSpeed;
 //	}
@@ -14,25 +14,28 @@ class Bike1 {
 //	}
 }
 
-class SuperBike extends Bike1 {
-	public String nameOfCom;
+class SuperBike66 extends Bike66 {
+	public String nameOfBike;
+	public int startSpeed;
 	public int topSpeed;
 	
-	public SuperBike(int topSpeed, String nameOfCom) {
-//		super(startSpeed,topSpeed);
+	public SuperBike66(int startSpeed, int topSpeed, String nameOfBike) {
+//		super(startSpeed, topSpeed);
+		this.startSpeed = startSpeed;
 		this.topSpeed = topSpeed;
-		this.nameOfCom = nameOfCom;
+		this.nameOfBike = nameOfBike;
 	}
 	
-	public void displayDetails() {
+	public void displayDetils() {
 //		super.display();
-		System.out.println(super.startSpeed +" "+ this.topSpeed);
-		System.out.println("compnay name is "+this.nameOfCom);
+		System.out.println(super.startSpeed);
+		System.out.println(this.topSpeed);
+		System.out.println(this.nameOfBike);
 	}
 }
 public class UsesOfSuperkeyword {
 	public static void main(String[] args) {
-		SuperBike obj = new SuperBike(280, "ktm");
-		obj.displayDetails();
+		SuperBike66 obj = new SuperBike66(50, 200, "KTM");
+		obj.displayDetils();
 	}
 }

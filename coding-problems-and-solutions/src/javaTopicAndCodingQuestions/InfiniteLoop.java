@@ -3,7 +3,8 @@ package javaTopicAndCodingQuestions;
 public class InfiniteLoop {
 	public static void main(String[] args) {
 		int count = 0;
-//		for(;true;) {
+		
+//		for (;true;) {
 //			System.out.println(count++);
 //		}
 		
@@ -11,8 +12,8 @@ public class InfiniteLoop {
 //			System.out.println(count++);
 //		}
 		
-		do {
-			System.out.println(count++);
-		}while(true);
+//		do {
+//			System.out.println(count++);
+//		}while (true);
 	}
 }

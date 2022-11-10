@@ -11,7 +11,7 @@ public class OverloadStaticMethod {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(sumOfNumber(22, 44));
-		System.out.println(sumOfNumber(22, 44, 66));
+		System.out.println(OverloadStaticMethod.sumOfNumber(10, 20));
+		System.out.println(OverloadStaticMethod.sumOfNumber(10, 20, 30));
 	}
 }
